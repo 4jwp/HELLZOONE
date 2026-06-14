@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head><meta charset="UTF-8"><title>Rangi</title></head>
-<body style="background:#050510;color:white;font-family:Arial">
-<h1>Rangi HELLZOONE</h1>
-<ul>
-<li>VIP - 20 PLN</li>
-<li>SVIP - 30 PLN</li>
-<li>GVIP - 40 PLN</li>
-<li>HELL - 50 PLN</li>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HELLZOONE • Rangi Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.ranks-header{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.ranks-header h1{
+    font-size:4rem;
+    text-shadow:0 0 15px #ff00ff,0 0 30px #00ffff;
+}
+
+.ranks-header p{
+    margin-top:15px;
+    color:#bbb;
+}
+
+.ranks{
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.rank{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+    position:relative;
+}
+
+.rank:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(0,255,255,.4);
+}
+
+.rank-name{
+    font-size:2rem;
+    margin-bottom:15px;
+    font-weight:900;
+}
+
+.rank-price{
+    font-size:2rem;
+    margin:20px 0;
+}
+
+.vip{color:#55ffff;}
+.svip{color:#00ff88;}
+.gvip{color:#ffaa00;}
+.hell{
+    color:#ff00ff;
+    text-shadow:0 0 15px #ff00ff;
+}
+
+.features-list{
+    list-style:none;
+    text-align:left;
+    margin-top:20px;
+}
+
+.features-list li{
+    margin:10px 0;
+}
+
+.buy-btn{
+    display:block;
+    margin-top:25px;
+    padding:15px;
+    text-decoration:none;
+    border-radius:15px;
+    color:white;
+    font-weight:bold;
+    background:linear-gradient(90deg,#00ffff,#ff00ff);
+}
+
+.best{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff00ff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:.8rem;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">HELLZOONE</div>
+
+<div class="menu">
+<a href="index.html">Start</a>
+<a href="rangi.html">Rangi</a>
+<a href="sklep.html">Sklep</a>
+<a href="regulamin.html">Regulamin</a>
+<a href="discord.html">Discord</a>
+</div>
+</nav>
+
+<section class="ranks-header">
+<h1>👑 Rangi Premium</h1>
+<p>Wybierz rangę i zdobądź dodatkowe możliwości na serwerze LifeSteal.</p>
+</section>
+
+<section class="ranks">
+
+<div class="rank">
+<h2 class="rank-name vip">VIP</h2>
+<div class="rank-price">20 PLN</div>
+
+<ul class="features-list">
+<li>✔ Prefix VIP</li>
+<li>✔ Kit VIP</li>
+<li>✔ Dodatkowe komendy</li>
+<li>✔ Bonusowe nagrody</li>
 </ul>
-</body></html>
+
+<a class="buy-btn" href="https://discord.gg/wCg8VcM5">
+Kup VIP
+</a>
+</div>
+
+<div class="rank">
+<h2 class="rank-name svip">SVIP</h2>
+<div class="rank-price">30 PLN</div>
+
+<ul class="features-list">
+<li>✔ Wszystko z VIP</li>
+<li>✔ Lepszy kit</li>
+<li>✔ Większe limity</li>
+<li>✔ Więcej bonusów</li>
+</ul>
+
+<a class="buy-btn" href="https://discord.gg/wCg8VcM5">
+Kup SVIP
+</a>
+</div>
+
+<div class="rank">
+<h2 class="rank-name gvip">GVIP</h2>
+<div class="rank-price">40 PLN</div>
+
+<ul class="features-list">
+<li>✔ Wszystko z SVIP</li>
+<li>✔ Efekty premium</li>
+<li>✔ Dodatkowe przywileje</li>
+<li>✔ Ekskluzywne funkcje</li>
+</ul>
+
+<a class="buy-btn" href="https://discord.gg/wCg8VcM5">
+Kup GVIP
+</a>
+</div>
+
+<div class="rank">
+<div class="best">NAJLEPSZA</div>
+
+<h2 class="rank-name hell">HELL</h2>
+<div class="rank-price">50 PLN</div>
+
+<ul class="features-list">
+<li>✔ Wszystko z GVIP</li>
+<li>✔ Prefix HELL</li>
+<li>✔ Priorytet wejścia</li>
+<li>✔ Wszystkie bonusy</li>
+<li>✔ Najwyższa ranga premium</li>
+</ul>
+
+<a class="buy-btn" href="https://discord.gg/wCg8VcM5">
+Kup HELL
+</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 HELLZOONE LIFESTYLE
+</footer>
+
+</body>
+</html>
