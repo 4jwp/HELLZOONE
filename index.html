@@ -1,8 +1,118 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head><meta charset="UTF-8"><title>HELLZOONE LIFESTYLE</title></head>
-<body style="background:#050510;color:white;font-family:Arial;text-align:center">
-<h1>HELLZOONE LIFESTYLE</h1>
-<p>IP: 4jwp.aternos.me:43175</p>
-<p><a href="rangi.html" style="color:cyan">Zobacz Rangi</a></p>
-</body></html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --cyan:#00ffff;
+    --pink:#ff00ff;
+    --dark:#050510;
+}
+
+body{
+    background:var(--dark);
+    color:white;
+    font-family:'Orbitron',sans-serif;
+    overflow-x:hidden;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:900;
+    text-shadow:
+    0 0 10px var(--pink),
+    0 0 20px var(--cyan);
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:var(--cyan);
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    text-shadow:
+    0 0 15px var(--pink),
+    0 0 30px var(--cyan);
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    border:2px solid var(--cyan);
+    box-shadow:0 0 15px var(--cyan);
+}
+
+.features{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.feature{
+    background:rgba(255,255,255,.05);
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.rank-card{
+    max-width:700px;
+    margin:25px auto;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.rank-price{
+    font-size:1.5rem;
+    color:var(--cyan);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#999;
+}
